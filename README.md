@@ -1,6 +1,18 @@
-# Getting Started with Create React App
+# 1. Install Create React App through node package manger
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  npm install -g create-react-app
+
+## Getting Started with Create React App
+  This project was bootstrapped with [Create React App]
+  (https://github.com/facebook/create-react-app).
+# 2. Clone github repository 
+  git clone https://github.com/SergioJFalcon/cs5103.git
+# 3. Enter project folder 
+  cd cs5103
+# 4. Install project dependencies
+  npm install 
+  yarn [if yarn is installed]
+
 
 ## Available Scripts
 
