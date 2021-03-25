@@ -65,7 +65,7 @@ const printMap = map => {
     unique words into a map, if a word that is in the map 
     is inputted the count is increased
   Returns: an associated array with the keys being the 'words' 
-    and the occurance of said 'word' count as its value
+    and the occurrence of said 'word' count as its value
 **/
 export const wordFrequency = wordList => {
   let frequency = new Map();
@@ -81,7 +81,6 @@ export const wordFrequency = wordList => {
 
       //if no, add into hashmap with a count of 1
       //if yes, search hashmap and increase count by 1
-      console.log('current word: ', listOfWords[i])
       if(frequency.has(listOfWords[i])) {
         let increase = frequency.get(listOfWords[i]) + 1;
         frequency.set(listOfWords[i], increase);
@@ -90,7 +89,6 @@ export const wordFrequency = wordList => {
         frequency.set(listOfWords[i], 1);
        }
     }
-    console.log(printMap(frequency));
 
     let newArray = Array.from(frequency, ([word, counter]) => ({word, counter}));
     return newArray;
@@ -147,7 +145,7 @@ export const charCount = textfile => {
 /**
   method title: uniqueCharFrequency
   @params: string textFile
-  Description: counts the occurance of each character in the 
+  Description: counts the occurrence  of each character in the 
     string using a map to hold the character as its key and 
     its frequency as its value
   Returns: associated array of the characters as its keys and its frequency as its value
@@ -172,7 +170,6 @@ export const uniqueCharFrequency = textfile => {
          }  
       }
     }
-    console.log(printMap(charFrequency));
 
     let newArray = Array.from(charFrequency, ([character, counter]) => ({character, counter}));
 

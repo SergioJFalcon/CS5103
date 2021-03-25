@@ -1,3 +1,5 @@
+Link to Deployed App - https://cs5103.herokuapp.com
+
 # 1. Install Create React App through node package manger
 
   npm install -g create-react-app
