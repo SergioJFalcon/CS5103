@@ -21,8 +21,9 @@ export const printCleanList = list => {
   let printline = '';
   list.forEach((entry) => {
     printline += entry + ' ';
-  })
-  return printline;
+  });
+
+  return printline.trim();
 }
 
 /**
@@ -175,4 +176,36 @@ export const uniqueCharFrequency = textfile => {
 
     return newArray;
   }
+};
+
+/**
+ * @methodTitle escapeRegExp
+ * 
+ * @param {string} input 
+ * @description: removes characters that aren't numbers or characters from the user submitted text
+ * @returns {string}
+ */
+const escapeRegExp = userInput => {
+  return userInput.replace(/[.,*+?^${}()|[\]\\]/g, "");
+};
+
+/**
+ * The second requirement change is to allow replacement of all
+    occurrences of a given pattern word to a given replacement word. 
+    
+    Note that the  replacement happens only when the given pattern word matches with
+    a whole word. For example, for text “ab cd ef”, replace “a” with “b” will result 
+    in no change, while replace “ab” with “cd” will result in “cd cd ef”.
+ */
+/**
+ * @method replaceWord
+ * 
+ * @param {string} textfile 
+ * @param {string} wordToBeReplaced 
+ * @param {string} replacingWord 
+ * @description: Replace every occurance of a given word with a second submitted word
+ * @returns {string}
+ */
+export const replaceWord = (textfile, wordToBeReplaced, replacingWord) => {
+  return textfile.replace(new RegExp(`\\b${escapeRegExp(wordToBeReplaced)}\\b`, 'g'), replacingWord); 
 };

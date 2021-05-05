@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`My first snapshot test testing app 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="header"
+  >
+    <h4>
+      Created by: Sergio J Falcon
+    </h4>
+  </div>
+  first first two three
+  <h1>
+    Upload a file to run Word Statistics
+  </h1>
+  <div
+    className="container"
+  >
+    <div
+      className="button-wrap"
+    >
+      <label
+        className="button"
+        htmlFor="uploadFile"
+      >
+        Upload File
+      </label>
+      <input
+        id="uploadFile"
+        onChange={[Function]}
+        type="file"
+      />
+    </div>
+  </div>
+  <div
+    className="text"
+  >
+    <p>
+      empty
+    </p>
+  </div>
+  <div
+    className="function_container"
+  >
+    <div
+      className="column"
+    >
+      <h2>
+        Word Count: 
+      </h2>
+      <p />
+    </div>
+    <div
+      className="column"
+    >
+      <h2>
+        Word Frequency: 
+      </h2>
+    </div>
+    <div
+      className="column"
+    >
+      <h2>
+        Line Count: 
+      </h2>
+      <p />
+    </div>
+    <div
+      className="column"
+    >
+      <h2>
+        Char Count: 
+      </h2>
+      <p />
+    </div>
+    <div
+      className="column"
+    >
+      <h2>
+        Unique Char Frequency: 
+      </h2>
+    </div>
+    <div
+      className="column"
+    >
+      <h2>
+        Word Replacement: 
+      </h2>
+      <form
+        onSubmit={[Function]}
+      >
+        <div>
+          <label>
+            Word to be replaced: 
+          </label>
+          <input
+            onChange={[Function]}
+            type="text"
+            value=""
+          />
+        </div>
+        <div>
+          <label>
+            Replacement for said word:
+          </label>
+          <input
+            onChange={[Function]}
+            type="text"
+            value=""
+          />
+        </div>
+        <input
+          type="submit"
+          value="Submit"
+        />
+      </form>
+      <p>
+        
+      </p>
+    </div>
+  </div>
+</div>
+`;
