@@ -47,7 +47,9 @@ exports[`My first snapshot test testing app 1`] = `
     <div
       className="column"
     >
-      <h2>
+      <h2
+        title="word-count"
+      >
         Word Count: 
       </h2>
       <p />

@@ -45,21 +45,6 @@ export const wordCount = text => {
 };
 
 /**
-  method title: printMap
-  @params:Map() map
-  Description: prints a map into a formatted string
-  Returns: formatted string
-**/
-const printMap = map => {
-  let print = '';
-  map.forEach(function(value, key) {
-    print += key + ' : ' + value + '\n';
-  });
-
-  return print;
-};
-
-/**
   method title: wordFrequency
   @params: array wordList
   Description: Takes in an array of words and inputs 
@@ -154,8 +139,8 @@ export const charCount = textfile => {
 export const uniqueCharFrequency = textfile => {
   //counter for unique characters in the file
   let charFrequency = new Map();
-  if(!charFrequency){
-    return null;
+  if(!textfile){
+    return [0];
   }
   else {
     for (let i = 0; i < textfile.length; i++) {

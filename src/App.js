@@ -67,7 +67,7 @@ function App() {
         </div>
         <div className="function_container">
           <div className="column">
-            <h2>Word Count: </h2><p>{wordCount(text)}</p>
+            <h2 title="word-count">Word Count: </h2><p>{wordCount(text)}</p>
           </div>
           <div className="column">
             <h2>Word Frequency: </h2>
