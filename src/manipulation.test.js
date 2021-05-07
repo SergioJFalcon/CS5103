@@ -3,11 +3,6 @@ import { render, screen } from '@testing-library/react'
 
 import {printCleanList, printMap, cleanList, wordCount, wordFrequency, lineCount, charCount, uniqueCharFrequency, replaceWord} from './manipulation';
 
-
-test('has correct welcome text', () => {
-    render(<h4>Created By: Sergio J Falcon</h4>)
-    expect(screen.getByRole('heading')).toHaveTextContent('Created By: Sergio J Falcon')
-})
 describe('String Manipulation', ()=> {
     test('empty data file', () => {
 
